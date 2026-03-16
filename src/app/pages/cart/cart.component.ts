@@ -151,6 +151,11 @@ this.http.post("https://mihaa-backend.onrender.com/api/orders/create/", order)
 .subscribe({
 next:(res)=>{
 console.log("Order placed",res);
+localStorage.removeItem(cartKey);
+
+alert("Order placed successfully");
+
+this.router.navigate(['/orders']);
 },
 error:(err)=>{
 console.log("Error",err);
@@ -159,11 +164,7 @@ console.log("Error",err);
 
 });
 
-localStorage.removeItem(cartKey);
 
-alert("Order placed successfully");
-
-this.router.navigate(['/orders']);
 
 }
 // increase(item:any){
