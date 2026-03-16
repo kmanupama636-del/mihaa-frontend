@@ -1,0 +1,46 @@
+<div class="product-details" *ngIf="product">
+
+<div class="details-container">
+
+<div class="image">
+
+<img [src]="product.image">
+
+</div>
+
+<div class="info">
+
+<h1>{{product.name}}</h1>
+
+<p class="price">₹ {{product.price}}</p>
+
+<p class="desc">
+{{product.description}}
+</p>
+
+<div class="buttons">
+
+<button class="cart-btn" (click)="addToCart(product)">
+Add to Cart
+</button>
+
+<div class="wishlist-btn"
+[class.active]="isWishlisted(product)"
+(click)="toggleWishlist(product); $event.stopPropagation()">
+
+ Wishlist ♥ 
+
+</div>
+
+<button class="buy-btn" (click)="buyNow(product)">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+

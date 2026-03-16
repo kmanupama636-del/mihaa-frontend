@@ -1,0 +1,394 @@
+<div class="products-container">
+
+<div class="section-title">
+<span class="line"></span>
+<h2>Explore Our Collection</h2>
+</div>
+
+<!-- <div class="products-grid">
+
+<div class="product-card"
+*ngFor="let product of products"
+(click)="goToDetails(product)">
+
+<div class="image-wrapper">
+
+<img [src]="product.image">
+
+<div class="wishlist-btn"
+     [class.active]="isWishlisted(product.id)"
+     (click)="toggleWishlist(product); $event.stopPropagation()">
+     ♥
+</div>
+
+
+
+</div>
+
+<div class="product-info">
+
+<h3>{{product.name}}</h3>
+
+<p class="price">₹ {{product.price}}</p>
+
+<div class="buttons">
+
+<button (click)="addToCart(product); $event.stopPropagation()">
+Add to Cart
+</button>
+
+<button (click)="buyNow(product); $event.stopPropagation()">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+<div id="Kurtis" class="category-section">
+
+<div class="section-title">
+<span class="line"></span>
+<h4>Kurtis</h4>
+</div>
+
+<div class="products-grid">
+
+<div class="product-card"
+*ngFor="let product of products"
+[hidden]="product.category !== 1"
+(click)="goToDetails(product)">
+
+<div class="image-wrapper">
+
+<img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">
+
+<div class="wishlist-btn"
+[class.active]="isWishlisted(product)"
+(click)="toggleWishlist(product); $event.stopPropagation()">
+
+ ♥
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h3>{{product.name}}</h3>
+
+<p class="price">₹ {{product.price}}</p>
+
+<div class="buttons">
+
+<button (click)="addToCart(product); $event.stopPropagation()">
+Add to Cart
+</button>
+
+<button (click)="buyNow(product); $event.stopPropagation()">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div id="Sarees" class="category-section">
+
+<div class="section-title">
+<span class="line"></span>
+<h2>Sarees</h2>
+</div>
+
+<div class="products-grid">
+
+<div class="product-card"
+*ngFor="let product of products"
+[hidden]="product.category !== 2"
+(click)="goToDetails(product)">
+
+<div class="image-wrapper">
+
+<img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">
+
+<div class="wishlist-btn"
+[class.active]="isWishlisted(product.id)"
+(click)="toggleWishlist(product); $event.stopPropagation()">
+
+ ♥
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h3>{{product.name}}</h3>
+
+<p class="price">₹ {{product.price}}</p>
+
+<div class="buttons">
+
+<button (click)="addToCart(product); $event.stopPropagation()">
+Add to Cart
+</button>
+
+<button (click)="buyNow(product); $event.stopPropagation()">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div id="Co-ord Sets" class="category-section">
+
+<div class="section-title">
+<span class="line"></span>
+<h2>Co-ord Sets</h2>
+</div>
+
+<div class="products-grid">
+
+<div class="product-card"
+*ngFor="let product of products"
+[hidden]="product.category !== 3"
+(click)="goToDetails(product)">
+
+<div class="image-wrapper">
+
+<img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">>
+
+<div class="wishlist-btn"
+[class.active]="isWishlisted(product.id)"
+(click)="toggleWishlist(product); $event.stopPropagation()">
+
+ ♥
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h3>{{product.name}}</h3>
+
+<p class="price">₹ {{product.price}}</p>
+
+<div class="buttons">
+
+<button (click)="addToCart(product); $event.stopPropagation()">
+Add to Cart
+</button>
+
+<button (click)="buyNow(product); $event.stopPropagation()">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div id="Ethnic Sets" class="category-section">
+
+<div class="section-title">
+<span class="line"></span>
+<h2>Ethnic Sets</h2>
+</div>
+
+<div class="products-grid">
+
+<div class="product-card"
+*ngFor="let product of products"
+[hidden]="product.category !== 4"
+(click)="goToDetails(product)">
+
+<div class="image-wrapper">
+
+<img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">
+
+<div class="wishlist-btn"
+[class.active]="isWishlisted(product.id)"
+(click)="toggleWishlist(product); $event.stopPropagation()">
+
+ ♥
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h3>{{product.name}}</h3>
+
+<p class="price">₹ {{product.price}}</p>
+
+<div class="buttons">
+
+<button (click)="addToCart(product); $event.stopPropagation()">
+Add to Cart
+</button>
+
+<button (click)="buyNow(product); $event.stopPropagation()">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div id="Everyday Casuals" class="category-section">
+
+<div class="section-title">
+<span class="line"></span>
+<h3>Everyday Casuals</h3>
+</div>
+
+<div class="products-grid">
+
+<div class="product-card"
+*ngFor="let product of products"
+[hidden]="product.category !== 5"
+(click)="goToDetails(product)">
+
+<div class="image-wrapper">
+
+<img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">
+
+<div class="wishlist-btn"
+[class.active]="isWishlisted(product.id)"
+(click)="toggleWishlist(product); $event.stopPropagation()">
+
+ ♥
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h3>{{product.name}}</h3>
+
+<p class="price">₹ {{product.price}}</p>
+
+<div class="buttons">
+
+<button (click)="addToCart(product); $event.stopPropagation()">
+Add to Cart
+</button>
+
+<button (click)="buyNow(product); $event.stopPropagation()">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div id="Evening & Party Wear" class="category-section">
+
+<div class="section-title">
+<span class="line"></span>
+<h3>Evening & Party Wear</h3>
+</div>
+
+<div class="products-grid">
+
+<div class="product-card"
+*ngFor="let product of products"
+[hidden]="product.category !== 6"
+(click)="goToDetails(product)">
+
+<div class="image-wrapper">
+
+<img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">
+
+<div class="wishlist-btn"
+[class.active]="isWishlisted(product.id)"
+(click)="toggleWishlist(product); $event.stopPropagation()">
+
+ ♥
+
+</div>
+
+</div>
+
+<div class="product-info">
+
+<h3>{{product.name}}</h3>
+
+<p class="price">₹ {{product.price}}</p>
+
+<div class="buttons">
+
+<button (click)="addToCart(product); $event.stopPropagation()">
+Add to Cart
+</button>
+
+<button (click)="buyNow(product); $event.stopPropagation()">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>

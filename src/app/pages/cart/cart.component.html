@@ -1,0 +1,126 @@
+<!-- <div class="container">
+
+<h2>Your Cart</h2>
+
+<div *ngIf="cartItems.length==0">
+Cart is empty
+</div>
+
+<div class="cart-item" *ngFor="let item of cartItems">
+
+
+
+<div>
+
+<h3>{{item.name}}</h3>
+
+<p>₹ {{item.price}}</p>
+
+</div>
+
+</div>
+
+</div> -->
+<!-- <div class="cart-container">
+
+<h2>Your Cart</h2>
+
+<div *ngIf="cart.length==0" class="empty">
+Cart is empty
+</div>
+
+<div class="cart-item" *ngFor="let item of cart; let i=index">
+
+<img [src]="item.image">
+
+<div class="info">
+
+<h3>{{item.name}}</h3>
+
+<p>₹ {{item.price}}</p>
+
+<div class="qty">
+
+<button (click)="decrease(item)">-</button>
+
+<span>{{item.quantity || 1}}</span>
+
+<button (click)="increase(item)">+</button>
+
+</div>
+
+<button class="remove" (click)="removeItem(i)">
+Remove
+</button>
+
+</div>
+
+</div>
+
+<div class="total" *ngIf="cart.length>0">
+
+<h3>Total : ₹ {{total}}</h3>
+
+<button class="checkout" (click)="checkout()">
+Place Order
+</button>
+
+</div>
+
+</div> -->
+
+<div class="cart-container">
+
+<h2>Your Cart</h2>
+<div class="cart-container">
+
+
+<!-- EMPTY CART MESSAGE -->
+<div *ngIf="cart.length == 0" class="empty">
+
+<p>Your cart is empty 🛒</p>
+
+<a routerLink="/products" class="shop-btn">
+Start Shopping
+</a>
+
+</div>
+
+<div *ngFor="let item of cart; let i=index" class="cart-item">
+
+<img [src]="item.image">
+
+<div class="product-info">
+
+<h3>{{item.name}}</h3>
+
+<p class="price">₹ {{item.price}}</p>
+
+<div class="quantity">
+
+<button (click)="decrease(item)">−</button>
+
+<span>{{item.quantity || 1}}</span>
+
+<button (click)="increase(item)">+</button>
+
+</div>
+
+<p class="remove" (click)="removeItem(item.id)">
+Remove
+</p>
+
+</div>
+
+</div>
+<div class="total" *ngIf="cart.length>0">
+
+<h3>Total : ₹ {{total}}</h3>
+
+<button class="checkout" (click)="checkout()">
+Place Order
+</button>
+
+</div>
+
+</div>

@@ -1,0 +1,27 @@
+<div class="wishlist-container">
+
+<h2>Your Wishlist</h2>
+
+<div *ngIf="wishlist.length==0" class="empty">
+No items in wishlist
+</div>
+
+<div class="wishlist-item" *ngFor="let item of wishlist; let i=index">
+
+<img [src]="item.image">
+
+<h3>{{item.name}}</h3>
+
+<p>₹ {{item.price}}</p>
+
+<button (click)="moveToCart(item)">
+Move to Cart
+</button>
+
+<button (click)="removeItem(item)">
+Remove
+</button>
+
+</div>
+
+</div>

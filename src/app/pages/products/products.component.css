@@ -1,0 +1,162 @@
+.products-container{
+padding:40px;
+margin-top:-50px;
+margin-bottom: 30px;
+margin-left: 10px;
+}
+
+/* title */
+
+.section-title{
+display:flex;
+align-items:center;
+margin-bottom:30px;
+margin-top: 30px;
+}
+
+.line{
+width:3px;
+height:20px;
+background:#ff3f6c;
+margin-right:10px;
+border-radius:2px;
+}
+
+.section-title h2{
+font-size:25px;
+margin:0;
+
+}
+.section-title h4{
+font-size:22px;
+margin:0;
+}
+
+
+
+.products-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+
+.product-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+cursor:pointer;
+transition:0.3s;
+}
+
+.product-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+
+.image-wrapper{
+position:relative;
+}
+
+.image-wrapper img{
+width:90%;
+height:400px;
+object-fit:cover;
+/* width:100%;
+height:390px;
+object-fit:contain; */
+/* max-height:310px ; */
+}
+
+
+
+/* .wishlist{
+position:absolute;
+top:10px;
+right:10px;
+background:white;
+border:none;
+border-radius:50%;
+padding:6px 8px;
+cursor:pointer;
+} */
+.wishlist-btn{
+position:absolute;
+top:10px;
+right:40px;
+background:white;
+width:26px;
+height:26px;
+border-radius:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
+color:#999;
+transition:0.3s;
+}
+
+.wishlist-btn:hover{
+transform:scale(1.1);
+}
+
+.wishlist-btn.active{
+color:#ff3f6c;
+background:white;
+}
+
+.product-info{
+padding:15px;
+}
+
+.product-info h3{
+font-size:18px;
+margin-bottom:8px;
+
+}
+
+.price{
+color:#ff3f6c;
+font-weight:600;
+margin-bottom:10px;
+}
+
+
+
+.buttons{
+display:flex;
+gap:10px;
+}
+
+.buttons button{
+padding:6px 12px;
+border:none;
+background:black;
+color:white;
+cursor:pointer;
+border-radius:4px;
+}
+
+.buttons button:last-child{
+background:#ff3f6c;
+}
+
+/* responsive */
+
+@media(max-width:1000px){
+.products-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:760px){
+.products-grid{
+grid-template-columns:1fr;
+}
+}
+

@@ -1,0 +1,110 @@
+.orders-container{
+max-width:1000px;
+margin:auto;
+padding:40px;
+}
+
+.orders-container h2{
+margin-bottom:30px;
+font-size:28px;
+
+}
+
+.orders-item{
+display:flex;
+align-items:center;
+gap:20px;
+border-bottom:1px solid #eee;
+padding:20px 0;
+}
+
+
+
+.orders-item img{
+width:170px;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+margin-right: 15px;
+}
+.orders-item h3{
+flex:1;
+font-size:18px;
+}
+
+.orders-item p{
+color:#ff3f6c;
+font-weight:600;
+}
+
+.status{
+background:#e6ffe6;
+color:green;
+padding:6px 12px;
+border-radius:20px;
+font-size:14px;
+}
+
+button{
+transition:0.2s;
+}
+
+button:hover{
+opacity:0.85;
+transform:scale(1.05);
+}
+
+/* img{
+object-fit:cover;
+} */
+.empty {
+text-align:center;
+color:gray;
+font-size:18px;
+margin-top:40px;
+}
+
+.pending{
+background:#ffeeba;
+color:#856404;
+}
+
+/* Confirmed */
+.confirmed{
+background:#cce5ff;
+color:#004085;
+}
+
+/* Shipped */
+.shipped{
+background:#d4edda;
+color:#155724;
+}
+
+/* Out for delivery */
+.delivery{
+background:#e2e3ff;
+color:#383d8b;
+}
+
+/* Delivered */
+.delivered{
+background:#c3e6cb;
+color:#155724;
+}
+@media (max-width:768px){
+
+.cart-item,
+.order-item{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+}
+
+.cart-item img,
+.order-item img{
+width:100%;
+height:auto;
+}
+
+}

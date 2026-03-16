@@ -1,0 +1,44 @@
+<header class="navbar">
+
+<div class="logo">
+<img src="assets/logo.png">
+</div>
+
+<nav class="nav-links">
+<a routerLink="/">Home</a>
+<a routerLink="/products">Shop</a>
+<a routerLink="/wishlist">Wishlist</a>
+<a routerLink="/cart">Cart<span class="cart-badge" *ngIf="cartCount > 0">{{cartCount}}</span></a>
+<a routerLink="/orders">Orders</a>
+<a *ngIf="!auth.isLoggedIn()" routerLink="/login">Login</a>
+
+<div class="account-menu" *ngIf="auth.isLoggedIn()">
+
+  <span (click)="toggleAccountMenu()">
+    👤My Account▼
+  </span>
+  
+  <div class="dropdown" *ngIf="showAccountMenu">
+    <h6 style="text-align: center; color: rgb(176, 57, 96);">🌷{{currentUser.name}}</h6>
+    <a routerLink="/orders">My Orders</a>
+
+    <a routerLink="/wishlist">Wishlist</a>
+    <a routerLink="/cart">My Cart<span class="cart-badge" *ngIf="cartCount > 0">{{cartCount}}</span></a>
+
+    <a (click)="logout()">Logout</a>
+
+  </div>
+
+</div>
+</nav></header>
+
+
+<router-outlet></router-outlet>
+
+
+
+<footer class="footer">
+
+<p>© 2026 Mihaa Women's Fashion</p>
+
+</footer>

@@ -1,0 +1,35 @@
+<div class="orders-container">
+
+<h2>Your Orders</h2>
+
+<div *ngIf="orders.length==0" class="empty">
+No Orders Yet
+</div>
+
+<div class="orders-item" *ngFor="let item of orders; let i=index">
+
+<img [src]="item.image">
+
+<h3>{{item.name}}</h3>
+
+<p *ngIf="item.quantity > 1">
+(₹{{item.price}} × {{item.quantity}})
+₹{{item.price * (item.quantity || 1)}}
+</p>
+
+<p *ngIf="!item.quantity || item.quantity == 1">
+₹{{item.price}}
+</p>
+
+<span class="status"
+[ngClass]="{
+'pending': item.status=='Pending',
+'confirmed': item.status=='Order Confirmed',
+'shipped': item.status=='Shipped',
+'delivery': item.status=='Out For Delivery',
+'delivered': item.status=='Delivered'
+}">
+{{item.status}}
+</span>
+
+</div>

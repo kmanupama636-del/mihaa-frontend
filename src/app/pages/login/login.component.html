@@ -1,0 +1,45 @@
+<div class="auth-wrapper">
+
+  <div class="auth-card">
+
+    <div class="logo">
+        
+  <img src="assets/logo.png" style="width: 80px;" >
+</div>
+    
+
+    <h2>Login to your account</h2>
+
+    <form (ngSubmit)="login()" class="auth-form">
+
+      <input
+        type="email"
+        placeholder="Email"
+        [(ngModel)]="email"
+        name="email"
+        required
+      />
+
+      <input
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+        name="password"
+        required
+      />
+
+      <button type="submit">Login</button>
+
+    </form>
+
+    <p class="auth-link">
+      Don't have an account?
+      <a routerLink="/signup">Create account</a>
+    </p>
+
+  </div>
+
+</div>
+
+
+
