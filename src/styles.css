@@ -164,12 +164,32 @@ font-size:12px;
 margin-left:5px;
 }
 .mobile-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 15px;
+  background:white;
   position:fixed;
   top:0;
   left:0;
   width:100%;
-  background:white;
   z-index:1000;
+}
+
+.logo{
+  font-weight:bold;
+  font-size:20px;
+}
+
+.header-right{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.menu-btn{
+  font-size:24px;
+  cursor:pointer;
 }
 .mobile-only{
   display:none;
