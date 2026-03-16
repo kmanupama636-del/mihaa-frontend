@@ -16,7 +16,7 @@ constructor(private http:HttpClient, private router:Router){}
 
 ngOnInit(){
 
-this.http.get("http://mihaa-backend.onrender.com/api/categories/")
+this.http.get("https://mihaa-backend.onrender.com/api/categories/")
 .subscribe((data:any)=>{
 
 this.categories = data;
