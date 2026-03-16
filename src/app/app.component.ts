@@ -12,6 +12,7 @@ OnInit{
   currentUser:any;
 showAccountMenu = false;
 isLoggedIn=false;
+menuOpen=false;
 constructor(public auth: AuthService) {}
 
 ngOnInit(){
@@ -21,7 +22,9 @@ this.currentUser = JSON.parse(localStorage.getItem('user') || 'null');
 this.loadCartCount();
 
 }
-
+toggleMenu(){
+  this.menuOpen=!this.menuOpen;
+}
 // loadCartCount(){
 
 // let user = JSON.parse(localStorage.getItem('user') || 'null');
@@ -64,10 +67,7 @@ this.cartCount = 0;
 toggleAccountMenu(){
 this.showAccountMenu = !this.showAccountMenu;
 }
-// ngDoCheck(){
-//   this.isLoggedIn=this.auth.isLoggedIn();
-  
-// }
+
 // logout(){
 
 
