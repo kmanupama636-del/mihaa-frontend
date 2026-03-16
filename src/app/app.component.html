@@ -63,12 +63,12 @@
 
 <div class="mobile-menu" *ngIf="menuOpen">
 
-  <a routerLink="/">Home🏠</a>
-  <a routerLink="/shop">Shop🛍️</a>
+  <a routerLink="/"(click)="toggleMenu()">Home🏠</a>
+  <a routerLink="/shop"(click)="toggleMenu()">Shop🛍️</a>
   
-  <a routerLink="/cart">Cart🛒<span class="cart-badge" *ngIf="cartCount > 0">{{cartCount}}</span></a>
-  <a routerLink="/wishlist">Wishlist❤️</a>
-  <a routerLink="/orders">Orders📦</a>
+  <a routerLink="/cart"(click)="toggleMenu()">Cart🛒<span class="cart-badge" *ngIf="cartCount > 0">{{cartCount}}</span></a>
+  <a routerLink="/wishlist"(click)="toggleMenu()">Wishlist❤️</a>
+  <a routerLink="/orders"(click)="toggleMenu()">Orders📦</a>
 
   <a *ngIf="auth.isLoggedIn()" (click)="logout()">Logout</a>
 
@@ -76,7 +76,7 @@
 
 </div>
 
-
+<div class="overlay" *ngIf="menuOpen" (click)="toggleMenu()"></div>
 
 
 
