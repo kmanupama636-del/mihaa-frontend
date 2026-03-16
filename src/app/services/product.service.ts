@@ -7,13 +7,13 @@ import { Observable } from 'rxjs';
 
 export class ProductService{
 
-apiUrl="https://mihaa-backend.onrender.com/api/categories/";
+apiUrl="https://mihaa-backend.onrender.com/api/";
 
 constructor(private http:HttpClient){}
 
 getProducts():Observable<any[]>{
 
-return this.http.get<any[]>(this.apiUrl);
+return this.http.get<any[]>(this.apiUrl+"products/");
 
 }
 
