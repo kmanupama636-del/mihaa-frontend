@@ -147,7 +147,7 @@ status:"Pending",
 email:user.email
 
 };
-this.http.post("http://mihaa-backend.onrender.com/api/orders/create/", order)
+this.http.post("https://mihaa-backend.onrender.com/api/orders/", order)
 .subscribe({
 next:(res)=>{
 console.log("Order placed",res);
