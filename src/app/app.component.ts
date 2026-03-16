@@ -68,21 +68,22 @@ this.showAccountMenu = !this.showAccountMenu;
 //   this.isLoggedIn=this.auth.isLoggedIn();
   
 // }
-logout(){
+// logout(){
 
-// localStorage.removeItem('loggedIn');
-// localStorage.removeItem('currentUser');
 
-// this.showAccountMenu = false;
+
+
+// this.auth.logout();
+// alert("Logged Out Successfully");
+
+// this.currentUser=null;
 
 // window.location.href = "/";
+// }
 
-
-this.auth.logout();
-alert("Logged Out Successfully");
-// this.isLoggedIn=false;
-this.currentUser=null;
-// window.location.reload();
-window.location.href = "/";
+logout(){
+  localStorage.removeItem('loggedIn');
+  localStorage.removeItem('user');
+  window.location.href = "/";
 }
 }
