@@ -15,20 +15,6 @@ password=''
 
 constructor(private auth:AuthService, private router:Router){}
 
-// login(){
-
-// const data={
-// email:this.email,
-// password:this.password
-// }
-
-// this.auth.login(data).subscribe((res:any)=>{
-
-// this.auth.saveUser(res)
-
-// this.router.navigate(['/'])
-
-// })
 login(){
 
 const users = JSON.parse(localStorage.getItem('users') || '[]');
@@ -37,33 +23,28 @@ const user = users.find((u:any)=>
 u.email === this.email && u.password === this.password
 );
 
+
 // if(user){
 
-// localStorage.setItem('loggedIn','true');
-// localStorage.setItem('user',JSON.stringify(user));
+// localStorage.setItem('currentUser', JSON.stringify(user));
 
 // alert("Login successful");
 
-// this.router.navigate(['/']); // IMPORTANT
+// this.router.navigate(['/']);
 
 // }else{
 
 // alert("Invalid email or password");
 
 // }
-
-// }
 if(user){
+    localStorage.setItem('user', JSON.stringify(user));
+  localStorage.setItem('loggedIn','true');
+  localStorage.setItem('user', JSON.stringify(user));
 
-localStorage.setItem('currentUser', JSON.stringify(user));
+  alert("Login successful");
 
-alert("Login successful");
-
-this.router.navigate(['/']);
-
-}else{
-
-alert("Invalid email or password");
+  this.router.navigate(['/']);
 
 }
 }
