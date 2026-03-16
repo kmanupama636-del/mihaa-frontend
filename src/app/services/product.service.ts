@@ -4,10 +4,10 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({providedIn:'root'})
-
+// update trigger
 export class ProductService{
 
-apiUrl="https://mihaa-backend.onrender.com/api/";
+apiUrl="https://mihaa-backend.onrender.com/api/products/";
 
 constructor(private http:HttpClient){}
 
