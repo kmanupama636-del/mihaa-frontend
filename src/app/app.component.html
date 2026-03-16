@@ -30,6 +30,54 @@
   </div>
 
 </div>
+
+    <div class="mobile-only">
+
+<header class="mobile-header">
+
+  <!-- LEFT LOGO -->
+  <div class="logo">
+   <img src="assets/logo.png">
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="header-right">
+
+    <!-- LOGIN / USER -->
+    <div *ngIf="!auth.isLoggedIn()" routerLink="/login" class="login-btn">
+      Login
+    </div>
+
+    <div *ngIf="auth.isLoggedIn()" class="user-name">
+      👤 {{auth.getUser()?.name}}
+    </div>
+
+    <!-- MENU BUTTON -->
+    <div class="menu-btn" (click)="toggleMenu()">
+      ☰
+    </div>
+
+  </div>
+
+</header>
+
+<div class="mobile-menu" *ngIf="menuOpen">
+
+  <a routerLink="/">Home🏠</a>
+  <a routerLink="/shop">Shop🛍️</a>
+  
+  <a routerLink="/cart">Cart🛒<span class="cart-badge" *ngIf="cartCount > 0">{{cartCount}}</span></a>
+  <a routerLink="/wishlist">Wishlist❤️</a>
+  <a routerLink="/orders">Orders📦</a>
+
+  <a *ngIf="auth.isLoggedIn()" (click)="logout()">Logout</a>
+
+</div>
+
+</div>
+
+
+
 </nav></header>
 
 
