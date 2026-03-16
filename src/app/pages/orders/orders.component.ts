@@ -90,7 +90,7 @@ this.orders=[];
 return;
 }
 
-this.http.get<any>(`http://mihaa-backend.onrender.com/api/orders/?email=${user.email}`)
+this.http.get<any>(`https://mihaa-backend.onrender.com/api/orders/?email=${user.email}`)
 .subscribe((data:any)=>{
 
 this.orders=[...data];
@@ -136,7 +136,7 @@ this.updateStatus(order);
 updateStatus(order:any){
 
 this.http.put(
-`http://mihaa-backend.onrender.com/api/orders/update/${order.id}/`,
+`https://mihaa-backend.onrender.com/api/orders/update/${order.id}/`,
 {
 status:order.status
 }
