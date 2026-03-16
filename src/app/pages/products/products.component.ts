@@ -24,7 +24,7 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(){
     this.wishlist = JSON.parse(localStorage.getItem('wishlist') || '[]');
-    this.http.get<any>('https://mihaa-backend.onrender.com/api/')
+    this.http.get<any>('https://mihaa-backend.onrender.com/api/products/')
     .subscribe(data=>{
       this.products = data;
     });
