@@ -196,17 +196,17 @@ margin-left:5px;
 }
 .mobile-menu{
   position:fixed;
-  top:70px;
-  left:-260px;
-  width:220px;
-  height:100vh;
+  top:60px;
+  left:0;
+  width:250px;
+  height:calc(100vh - 60px);
   background:white;
   box-shadow:2px 0 10px rgba(0,0,0,0.15);
   padding:20px;
   transition:0.3s;
   z-index:9999;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .mobile-menu.open{
@@ -215,7 +215,7 @@ margin-left:5px;
 
 .mobile-menu a{
   display:block;
-  padding:12px 10px;
+  padding:12px 0;
   font-size:16px;
   text-decoration:none;
   color:#333;
