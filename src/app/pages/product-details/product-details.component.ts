@@ -125,7 +125,6 @@ this.router.navigate(['/product',product.id]);
 toggleWishlist(product:any){
 
 let user = JSON.parse(localStorage.getItem('user') || 'null');
-
 if(!user){
 
 alert("Please login first");
@@ -144,6 +143,7 @@ wishlist.splice(index,1);
 }else{
 wishlist.push(product);
 }
+
 
 localStorage.setItem(wishlistKey, JSON.stringify(wishlist));
 
