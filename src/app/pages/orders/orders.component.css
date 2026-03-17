@@ -129,4 +129,7 @@ color:#155724;
   .orders-container h2{
     font-size: 22px;
   }
+    .orders-container{
+    padding: 80px 15px;
+  }
 }
