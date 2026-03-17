@@ -8,7 +8,7 @@ No items in wishlist
 
 <div class="wishlist-item" *ngFor="let item of wishlist; let i=index">
 
-<img [src]="item.image">
+<img [src]="item.image"(click)="goToDetails(product);$event.stopPropagation()">
 <div class="details">
 <h3>{{item.name}}</h3>
 
