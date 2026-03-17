@@ -87,7 +87,7 @@ let user = JSON.parse(localStorage.getItem('user') || 'null');
 
 if(!user){
 alert("Please login first");
-this.router.navigate(['/login']);
+// this.router.navigate(['/login']);
 return;
 }
 
@@ -129,7 +129,7 @@ let user = JSON.parse(localStorage.getItem('user') || 'null');
 if(!user){
 
 alert("Please login first");
-this.router.navigate(['/login']);
+// this.router.navigate(['/login']);
 return;
 }
 
