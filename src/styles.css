@@ -187,13 +187,13 @@ margin-left:5px;
   align-items:center;
 }
 
-/* .menu-btn{
+.menu-btn{
   font-size:24px;
   cursor:pointer;
 }
 .mobile-only{
   display:none;
-} */
+}
 .mobile-menu{
   position:fixed;
   top:70px;

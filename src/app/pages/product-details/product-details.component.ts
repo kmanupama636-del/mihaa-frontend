@@ -146,7 +146,7 @@ wishlist.push(product);
 
 
 localStorage.setItem(wishlistKey, JSON.stringify(wishlist));
-this.router.navigate(['/wishlist']);
+
 }
 
   isWishlisted(product:any){

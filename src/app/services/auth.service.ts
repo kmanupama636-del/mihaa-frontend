@@ -34,7 +34,8 @@ return localStorage.getItem("user") != null
 
 logout(){
 localStorage.removeItem("user");
-// localStorage.removeItem("loggedIn")
+
 }
+
 
 }

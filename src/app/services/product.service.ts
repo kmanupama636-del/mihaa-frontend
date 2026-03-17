@@ -13,7 +13,7 @@ constructor(private http:HttpClient){}
 
 getProducts():Observable<any[]>{
 
-return this.http.get<any[]>(this.apiUrl);
+return this.http.get<any[]>(this.apiUrl+"products/");
 
 }
 

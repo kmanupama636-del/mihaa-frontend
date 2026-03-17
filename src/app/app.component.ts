@@ -12,7 +12,7 @@ OnInit{
   currentUser:any;
 showAccountMenu = false;
 isLoggedIn=false;
-menuOpen: boolean=false;
+menuOpen=false;
 constructor(public auth: AuthService) {}
 
 ngOnInit(){
@@ -24,7 +24,7 @@ this.loadCartCount();
 }
 toggleMenu(){
   this.menuOpen=!this.menuOpen;
-  console.log("menu:",this.menuOpen);
+ 
 }
 // loadCartCount(){
 
