@@ -111,7 +111,7 @@ if(order.status==="Pending"){
 setTimeout(()=>{
 order.status="Order Confirmed";
 this.updateStatus(order);
-},5000);
+},5000);1
 
 setTimeout(()=>{
 order.status="Shipped";
