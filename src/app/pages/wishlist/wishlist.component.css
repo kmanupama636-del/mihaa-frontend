@@ -1,34 +1,63 @@
-body{
-    overflow-x: hidden;
+
+
+
+
+
+
+.empty{
+text-align:center;
+color:gray;
+font-size:18px;
+margin-top:40px;
 }
+/* ===== CONTAINER ===== */
 .wishlist-container{
-max-width:1000px;
-margin:auto;
-/* padding:40px; */
- padding: 80px 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 30px;
 }
 
+/* ===== HEADING ===== */
 .wishlist-container h2{
-margin-bottom:30px;
-font-size:28px;
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 
+/* ===== EMPTY ===== */
+.empty{
+  color: #777;
+  margin-top: 40px;
+}
 
+/* ===== CARD ===== */
 .wishlist-item{
   display: flex;
-  gap: 15px;
-  padding: 15px 10px;
-  border-bottom: 1px solid #eee;
   align-items: center;
+  gap: 20px;
+  padding: 18px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 750px; /* 🔥 desktop control */
+  transition: 0.2s;
 }
 
+.wishlist-item:hover{
+  transform: translateY(-4px);
+}
+
+/* ===== IMAGE ===== */
 .wishlist-item img{
   width: 110px;
-  height: 130px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
+/* ===== DETAILS ===== */
 .details{
   flex: 1;
 }
@@ -42,22 +71,26 @@ font-size:28px;
   color: #ff3f6c;
   font-weight: 600;
   margin: 8px 0;
+  font-size: 16px;
 }
 
+/* ===== BUTTONS ===== */
 .btns{
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .btns button{
-  flex: 1;
-  padding: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 8px;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-/* colors */
+/* Colors */
 .cart-btn{
   background: black;
   color: white;
@@ -68,45 +101,50 @@ font-size:28px;
   color: white;
 }
 
-
-
-
-
-.details p{
-color:#ff3f6c;
-font-weight:600;
+/* Hover */
+.btns button:hover{
+  opacity: 0.85;
 }
 
 
 
-
-
-.empty{
-text-align:center;
-color:gray;
-font-size:18px;
-margin-top:40px;
-}
+/* ================= MOBILE ================= */
 @media (max-width:768px){
 
+  .wishlist-container{
+    padding: 80px 15px;
+  }
+
+  .wishlist-container h2{
+    font-size: 22px;
+  }
+
   .wishlist-item{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row; /* 🔥 still horizontal */
+    gap: 12px;
+    padding: 12px;
   }
 
   .wishlist-item img{
-    width: 160px;
-    height: auto;
+    width: 80px;
+    height: 100px;
+  }
+
+  .details h3{
+    font-size: 15px;
+  }
+
+  .price{
+    font-size: 14px;
   }
 
   .btns{
-    flex-direction: column;
-    width: 100%;
+    gap: 8px;
   }
 
   .btns button{
-    width: 100%;
+    padding: 6px 10px;
+    font-size: 12px;
   }
 
 }
