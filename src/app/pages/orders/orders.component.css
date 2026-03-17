@@ -126,5 +126,7 @@ color:#155724;
     padding: 4px 8px;
     white-space: nowrap; /* 🔥 prevent break */
   }
-
+  .orders-container h2{
+    font-size: 22px;
+  }
 }

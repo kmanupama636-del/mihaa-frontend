@@ -245,7 +245,7 @@ font-size:14px;
 
   
   .hero{
-    height: 350px;
+    height: 380px;
   }
  
 
@@ -255,9 +255,16 @@ font-size:14px;
   }
   .category-card h1{
     font-size: 20px;
+   
   }
   .hero-content h1{
-    font-size: 24px;
+    font-size: 26px;
+    margin-bottom: 20px;
   }
+  .hero-content p{
 
+font-size:20px;
+
+
+}
 }
