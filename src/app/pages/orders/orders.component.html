@@ -9,15 +9,15 @@ No Orders Yet
 <div class="orders-item" *ngFor="let item of orders; let i=index">
 
 <img [src]="item.image">
-
+<div class="details">
 <h3>{{item.name}}</h3>
 
-<p *ngIf="item.quantity > 1">
+<p class="price"*ngIf="item.quantity > 1">
 (₹{{item.price}} × {{item.quantity}})
 ₹{{item.price * (item.quantity || 1)}}
 </p>
 
-<p *ngIf="!item.quantity || item.quantity == 1">
+<p class="total"!item.quantity || item.quantity == 1">
 ₹{{item.price}}
 </p>
 
@@ -32,4 +32,4 @@ No Orders Yet
 {{item.status}}
 </span>
 
-</div>
+</div></div>

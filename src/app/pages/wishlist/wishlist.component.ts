@@ -175,5 +175,10 @@ let wishlistKey = "wishlist_" + user.email;
 this.wishlist = JSON.parse(localStorage.getItem(wishlistKey) || '[]');
 
 }
+goToDetails(product:any){
+
+    this.router.navigate(['/product-details', product.id]);
+
+  }
 }
 

@@ -260,4 +260,9 @@ localStorage.setItem(cartKey, JSON.stringify(this.cart));
 this.calculateTotal();
 
 }
+goToDetails(product:any){
+
+    this.router.navigate(['/product-details', product.id]);
+
+  }
 }

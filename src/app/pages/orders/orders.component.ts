@@ -116,17 +116,17 @@ this.updateStatus(order);
 setTimeout(()=>{
 order.status="Shipped";
 this.updateStatus(order);
-},10000);
+},20000);
 
 setTimeout(()=>{
 order.status="Out For Delivery";
 this.updateStatus(order);
-},15000);
+},25000);
 
 setTimeout(()=>{
 order.status="Delivered";
 this.updateStatus(order);
-},20000);
+},35000);
 
 }
 
