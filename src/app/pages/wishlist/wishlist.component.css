@@ -20,6 +20,7 @@ gap:15px;
 border-bottom:1px solid #eee;
 /* padding:20px 0; */
 padding: 10px;
+justify-content: space-between;
 }
 
 .wishlist-item img{
@@ -28,7 +29,7 @@ border-radius:10px; */
 width: 100%;
 max-width: 120px;
 height: auto;
-border-radius: 1opx;
+border-radius: 10px;
 }
 
 .wishlist-item h3{
@@ -40,21 +41,24 @@ font-size:18px;
 color:#ff3f6c;
 font-weight:600;
 }
-
-.wishlist-item button{
-margin-right:10px;
-padding:8px 14px;
+.btns{
+    display: flex;
+    gap: 10px;
+}
+.btns button{
+/* margin-right:10px; */
+padding:8px 12px;
 border:none;
 border-radius:6px;
 cursor:pointer;
 }
 
-.wishlist-item button:first-child{
+.btns button:first-child{
 background:#000;
 color:white;
 }
 
-.wishlist-item button:last-child{
+.btns button:last-child{
 background:#ff3f6c;
 color:white;
 }
@@ -69,4 +73,17 @@ margin-top:40px;
     .wishlist-container{
         padding: 90px 15px 20px 15px;
     }
+      .wishlist-item{
+    flex-direction: column; /* 🔥 stack everything */
+    align-items: flex-start;
+  }
+
+  .btns{
+    width: 100%;
+    flex-direction: column; /* 🔥 buttons vertical */
+  }
+
+  .btns button{
+    width: 100%; /* 🔥 full width buttons */
+  }
 }
