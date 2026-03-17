@@ -1,5 +1,5 @@
 .product-details{
-padding:40px 80px;
+padding:40px ;
 }
 
 .details-container{
@@ -85,6 +85,12 @@ text-align:center;
 .image img{
 width:100%;
 }
-
+.buttons{
+    flex-direction: row;
+    width: 100%;
+}
+.buttons button{
+    width: 100%;
+}
 }
 
