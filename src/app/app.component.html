@@ -55,20 +55,21 @@
     <!-- MENU BUTTON -->
     <div class="menu-btn" (click)="toggleMenu()">
       ☰
+     
     </div>
 
   </div>
 
-</header></div>
-
+</header>
+ <p>{{menuOpen}}</p>
 <div class="mobile-menu" *ngIf="menuOpen">
 
-  <a routerLink="/"(click)="toggleMenu()">Home🏠</a>
-  <a routerLink="/products"(click)="toggleMenu()">Shop🛍️</a>
+  <a routerLink="/">Home🏠</a>
+  <a routerLink="/products">Shop🛍️</a>
   
-  <a routerLink="/cart"(click)="toggleMenu()">Cart🛒<span class="cart-badge" *ngIf="cartCount > 0">{{cartCount}}</span></a>
-  <a routerLink="/wishlist"(click)="toggleMenu()">Wishlist❤️</a>
-  <a routerLink="/orders"(click)="toggleMenu()">Orders📦</a>
+  <a routerLink="/cart">Cart🛒<span class="cart-badge" *ngIf="cartCount > 0">{{cartCount}}</span></a>
+  <a routerLink="/wishlist">Wishlist❤️</a>
+  <a routerLink="/orders">Orders📦</a>
 
   <a *ngIf="auth.isLoggedIn()" (click)="logout()">Logout</a>
 
