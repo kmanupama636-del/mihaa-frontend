@@ -201,16 +201,12 @@ margin-left:5px;
   width:75%;
   height:100vh ;
   
-  /* backdrop-filter: blur(20px); */
-  background: white;
-
-  /* box-shadow: -5px 0 25px rgba(0,0,0,0.2); */
- 
+  /* background: rgba(255, 255, 255, 0.1); */
+background:#eee;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.2);
   padding: 80px 20px;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* transition: right 0.3s ease; */
-  align-items: stretch;
+
+  transition: right 0.3s ease;
   z-index: 9999;
 }
 
@@ -241,8 +237,8 @@ margin-left:5px;
   left:0;
   width:100%;
   height:100%;
-  background:rgba(0,0,0,0.4);
-  z-index:9998;
+  background:rgba(0,0,0,0.3);
+  z-index:999;
 }
 
 @media(max-width:768px){
