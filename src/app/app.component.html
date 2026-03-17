@@ -59,12 +59,12 @@
 
   </div>
 
-</header>
+</header></div>
 
 <div class="mobile-menu" *ngIf="menuOpen">
 
   <a routerLink="/"(click)="toggleMenu()">Home🏠</a>
-  <a routerLink="/shop"(click)="toggleMenu()">Shop🛍️</a>
+  <a routerLink="/products"(click)="toggleMenu()">Shop🛍️</a>
   
   <a routerLink="/cart"(click)="toggleMenu()">Cart🛒<span class="cart-badge" *ngIf="cartCount > 0">{{cartCount}}</span></a>
   <a routerLink="/wishlist"(click)="toggleMenu()">Wishlist❤️</a>
