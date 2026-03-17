@@ -204,7 +204,7 @@ margin-left:5px;
   /* background: rgba(255, 255, 255, 0.1); */
 background:#eee;
   box-shadow: -5px 0 25px rgba(0,0,0,0.2);
-  padding: 80px 20px;
+  padding:  20px;
 
   transition: right 0.3s ease;
   z-index: 9999;
