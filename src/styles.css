@@ -197,8 +197,8 @@ margin-left:5px;
 .mobile-menu{
   position:fixed;
   top:0;
-  right:0;
-  width:75%;
+  right:-260px;
+  width:260px;
   height:100vh ;
   
   /* background: rgba(255, 255, 255, 0.1); */
