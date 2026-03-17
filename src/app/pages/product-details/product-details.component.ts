@@ -132,7 +132,7 @@ this.router.navigate(['/login']);
 return;
 }
 
-let wishlistKey = "wishlist_" + user.email;
+const wishlistKey = "wishlist_" + user.email;
 
 let wishlist = JSON.parse(localStorage.getItem(wishlistKey) || '[]');
 
