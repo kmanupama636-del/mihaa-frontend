@@ -9,19 +9,20 @@ No items in wishlist
 <div class="wishlist-item" *ngFor="let item of wishlist; let i=index">
 
 <img [src]="item.image">
-
+<div class="details">
 <h3>{{item.name}}</h3>
 
 <p>₹ {{item.price}}</p>
-
-<button (click)="moveToCart(item)">
+<div class="btns">
+<button class="cart-btn" (click)="moveToCart(item)">
 Move to Cart
 </button>
 
-<button (click)="removeItem(item)">
+<button class="remove-btn"    (click)="removeItem(item)">
 Remove
-</button>
+</button></div>
 
 </div>
 
+</div>
 </div>
