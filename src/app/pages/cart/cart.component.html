@@ -88,7 +88,7 @@ Start Shopping
 
 <div *ngFor="let item of cart; let i=index" class="cart-item">
 
-<img [src]="item.image" (click)="goToDetails(product);$event.stopPropagation()">
+<img [src]="item.image" (click)="goToDetails(item);$event.stopPropagation()">
 
 <div class="product-info">
 
