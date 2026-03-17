@@ -12,7 +12,7 @@ OnInit{
   currentUser:any;
 showAccountMenu = false;
 isLoggedIn=false;
-menuOpen=true;
+menuOpen=false;
 constructor(public auth: AuthService) {}
 
 ngOnInit(){
