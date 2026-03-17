@@ -62,7 +62,7 @@
 
 </header></div>
  
-<div class="mobile-menu" *ngIf="menuOpen">
+<div class="mobile-menu" [class.open]="menuOpen">
 
   <a routerLink="/">Home🏠</a>
   <a routerLink="/products">Shop🛍️</a>
