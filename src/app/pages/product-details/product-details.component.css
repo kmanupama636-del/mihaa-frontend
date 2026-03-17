@@ -9,9 +9,12 @@ align-items:center;
 }
 
 .image img{
-width:350px;
+width: 100%;
+max-width:350px;
 border-radius:10px;
 height: auto;
+margin: auto;
+display: block;
 }
 
 .info{
@@ -36,7 +39,7 @@ margin-bottom:20px;
 
 .buttons{
 display:flex;
-gap:15px;
+gap:10px;
 }
 
 button{
@@ -46,6 +49,7 @@ cursor:pointer;
 background:black;
 color:white;
 border-radius:6px;
+
 }
 
 .buy-btn{
