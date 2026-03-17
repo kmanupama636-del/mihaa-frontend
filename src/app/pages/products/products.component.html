@@ -138,7 +138,7 @@ Buy Now
 <img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">
 
 <div class="wishlist-btn"
-[class.active]="isWishlisted(product.id)"
+[class.active]="isWishlisted(product)"
 (click)="toggleWishlist(product); $event.stopPropagation()">
 
  ♥
@@ -307,7 +307,7 @@ Buy Now
 <img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">
 
 <div class="wishlist-btn"
-[class.active]="isWishlisted(product.id)"
+[class.active]="isWishlisted(product)"
 (click)="toggleWishlist(product); $event.stopPropagation()">
 
  ♥
@@ -360,7 +360,7 @@ Buy Now
 <img [src]="product.image"(click)="goToDetails(product);$event.stopPropagation()">
 
 <div class="wishlist-btn"
-[class.active]="isWishlisted(product.id)"
+[class.active]="isWishlisted(product)"
 (click)="toggleWishlist(product); $event.stopPropagation()">
 
  ♥
