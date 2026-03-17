@@ -10,8 +10,8 @@ margin-left: 10px;
 .section-title{
 display:flex;
 align-items:center;
-margin-bottom:30px;
-margin-top: 30px;
+/* margin-bottom:30px;
+margin-top: 30px; */
 }
 
 .line{
@@ -154,7 +154,7 @@ grid-template-columns:repeat(2,1fr);
 }
 }
 
-@media(max-width:760px){
+@media(max-width:768px){
 .products-grid{
 grid-template-columns:1fr;
 }
