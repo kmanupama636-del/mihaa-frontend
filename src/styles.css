@@ -194,7 +194,7 @@ margin-left:5px;
 .mobile-only{
   display:none;
 }
-.mobile-menu{
+/* .mobile-menu{
   position:fixed;
   top:0;
   right:-260px;
@@ -202,28 +202,52 @@ margin-left:5px;
   height:100vh ;
   
   backdrop-filter: blur(20px);
-  /* background: rgba(255, 255, 255, 0.1); */
+  background: rgba(255, 255, 255, 0.1);
 
   box-shadow: -5px 0 25px rgba(0,0,0,0.2);
   padding: 20px;
 
   transition: right 0.3s ease;
   z-index: 9999;
-}
+} */
 
 .mobile-menu.open{
   right:0;
 }
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;          /* 👈 full screen */
+  width: 100%;      /* 👈 important */
+  height: 100vh;
+
+  background: #f5f3f1;  /* Zuri color */
+padding-top: 80px;
+  padding: 20px;
+  z-index: 9999;
+}
 
 
- .mobile-menu a {
+
+.mobile-menu a {
+  display: block;
+  font-size: 20px;
+  padding: 18px 0;
+  color: #2c2c2c;
+  text-decoration: none;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+ /* .mobile-menu a {
   display: block;
   padding: 14px 0;
   color: #333;
   font-size: 16px;
   text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,0.2);
-}
+} */
+
 .mobile-menu a:hover {
   padding-left: 10px;
   transition: 0.3s;
