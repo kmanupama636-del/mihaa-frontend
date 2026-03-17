@@ -2,7 +2,8 @@
 .wishlist-container{
 max-width:1000px;
 margin:auto;
-padding:40px;
+/* padding:40px; */
+padding-top: 80px;
 }
 
 .wishlist-container h2{
@@ -56,4 +57,9 @@ text-align:center;
 color:gray;
 font-size:18px;
 margin-top:40px;
+}
+@media(max-width:768px){
+    .wishlist-container{
+        padding-top: 90px;
+    }
 }
