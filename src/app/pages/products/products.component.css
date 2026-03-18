@@ -164,12 +164,9 @@ grid-template-columns:1fr;
 .section-title h2{
     font-size: 22px;
 }
-  .section-title{
-   
-    margin-top: 5px;
-  }
-  .products-container{
-    padding-top: 60px;
+  
+  body{
+    padding-top: 70px;
   }
 
 }
