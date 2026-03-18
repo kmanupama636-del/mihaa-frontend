@@ -164,7 +164,7 @@ grid-template-columns:1fr;
 }
 .section-title h2{
     margin-top: 50px;
-    /* flex: 1; */
+    flex: 1;
     font-size: 24px;
 }
 .section-title{
