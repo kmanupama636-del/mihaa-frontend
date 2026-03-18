@@ -4,16 +4,16 @@ body{
 .products-container{
 padding:40px;
 margin-top:0;
-/* margin-bottom: 30px;
-margin-left: 10px; */
+margin-bottom: 30px;
+margin-left: 10px;
 }
 
 /* title */
 
 .section-title{
-/* display:flex;
+display:flex;
 align-items:center;
-margin-bottom:20px; */
+margin-bottom:20px;
 margin-top: 20px;
 }
 
@@ -164,13 +164,13 @@ grid-template-columns:1fr;
 .section-title h2{
     font-size: 22px;
 }
-  
+ 
   body{
     padding-top: 70px;
   }
   .products-container{
-    margin-top: 10px;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px;
   }
 
 }
