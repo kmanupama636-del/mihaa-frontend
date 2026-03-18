@@ -208,5 +208,11 @@ gap:10px;
 width:100%;
 height:auto;
 }
+.cart-container h2{
+    font-size: 22px;
+  }
+    .cart-container{
+    padding: 80px 15px;
+  }
 
 }

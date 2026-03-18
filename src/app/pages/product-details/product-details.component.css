@@ -82,7 +82,7 @@ background:white;
 @media(max-width:768px){
 
 .details-container{
-flex-direction:column;
+/* flex-direction:column; */
 text-align:center;
 }
 
@@ -90,8 +90,8 @@ text-align:center;
 width:100%;
 max-width: 100%;
 height: auto;
-object-fit: contain;
-margin-bottom: 15px;
+object-fit: cver;
+/* margin-bottom: 15px; */
 }
 .buttons{
     flex-direction: row;
