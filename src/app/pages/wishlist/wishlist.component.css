@@ -12,16 +12,15 @@ margin-top:40px;
 }
 /* ===== CONTAINER ===== */
 .wishlist-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 20px 30px;
+ max-width:1000px;
+margin:auto;
+padding:40px;
 }
 
 /* ===== HEADING ===== */
 .wishlist-container h2{
   font-size: 28px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 /* ===== EMPTY ===== */
