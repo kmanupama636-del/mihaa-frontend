@@ -87,11 +87,13 @@ text-align:center;
 }
 
 .image img{
-width:100%;
+/* width:100%;
 max-width: 100%;
 height: auto;
 object-fit: contain;
 margin-bottom: 30px;
+d */
+height: 250px;
 }
 .buttons{
     flex-direction: row;
