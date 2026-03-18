@@ -163,7 +163,14 @@ grid-template-columns:repeat(2,1fr);
 grid-template-columns:1fr;
 }
 .section-title h2{
-    font-size: 22px;
+    margin: 0;
+    flex: 1;
+    font-size: 26px;
+}
+.section-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
  
   body{
