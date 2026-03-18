@@ -28,6 +28,7 @@ border-radius:2px;
 .section-title h2{
 font-size:25px;
 margin:0;
+display: inline-block;
 
 }
 .section-title h4{
