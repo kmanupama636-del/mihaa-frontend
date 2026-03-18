@@ -4,16 +4,16 @@ body{
 .products-container{
 padding:40px;
 margin-top:0;
-margin-bottom: 30px;
-margin-left: 10px;
+/* margin-bottom: 30px;
+margin-left: 10px; */
 }
 
 /* title */
 
 .section-title{
 display:flex;
-align-items:center;
-margin-bottom:20px;
+/* align-items:center;
+margin-bottom:20px; */
 margin-top: 20px;
 }
 
