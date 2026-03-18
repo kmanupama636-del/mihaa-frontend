@@ -11,9 +11,9 @@ margin-left: 10px; */
 /* title */
 
 .section-title{
-/* display:flex; */
-/* align-items:center;
-margin-bottom:20px; */
+display:flex;
+align-items:center;
+gap: 10px;
 margin-top: 20px;
 }
 
