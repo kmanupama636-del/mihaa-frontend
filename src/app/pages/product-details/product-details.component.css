@@ -82,7 +82,7 @@ background:white;
 @media(max-width:768px){
 
 .details-container{
-/* flex-direction:column; */
+flex-direction:column;
 text-align:center;
 }
 
