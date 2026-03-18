@@ -30,6 +30,7 @@ margin-bottom:10px;
 font-size:22px;
 font-weight:bold;
 margin-bottom:20px;
+color:#ff3f6c;
 }
 
 .desc{
@@ -84,6 +85,8 @@ background:white;
 .details-container{
 flex-direction:column;
 text-align:center;
+gap: 20px;
+/* display: block; */
 }
 
 .image img{
