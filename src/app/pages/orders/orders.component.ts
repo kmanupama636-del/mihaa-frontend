@@ -111,22 +111,22 @@ if(order.status==="Pending"){
 setTimeout(()=>{
 order.status="Order Confirmed";
 this.updateStatus(order);
-},5000);1
+},6000);1
 
 setTimeout(()=>{
 order.status="Shipped";
 this.updateStatus(order);
-},20000);
+},50000);
 
 setTimeout(()=>{
 order.status="Out For Delivery";
 this.updateStatus(order);
-},25000);
+},80000);
 
 setTimeout(()=>{
 order.status="Delivered";
 this.updateStatus(order);
-},35000);
+},120000);
 
 }
 
